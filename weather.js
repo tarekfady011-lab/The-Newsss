@@ -1,7 +1,7 @@
 async function getWeatherData() {
     var weatherApikey='126f9b2a61244389b05185423262909'
     var weatherApiCity='Asyut'
-    var weatherApiUrl=`http://api.weatherapi.com/v1/current.json?key=${weatherApikey}&q=${weatherApiCity}`
+    var weatherApiUrl=`https://api.weatherapi.com/v1/current.json?key=${weatherApikey}&q=${weatherApiCity}`
    var response=await fetch(weatherApiUrl)
    var data= await response.json()
    
